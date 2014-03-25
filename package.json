@@ -1,0 +1,11 @@
+{
+  "name": "html5-musicplayer",
+  "version": "0.0.2",
+  "dependencies": {
+    "grunt-cli": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-haml": "latest",
+    "grunt-contrib-uglify": "latest"
+  }
+}
