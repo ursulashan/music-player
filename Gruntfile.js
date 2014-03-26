@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     compass: {
       dist: {
         options: {
-          sassDir: '.',
+          sassDir: 'src/',
           cssDir: 'build/',
           outputStyle: 'compressed'
         }
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       dist: {
         expand: true,
         flatten : true,
-        src: '*.haml',
+        src: 'src/*.haml',
         dest: 'build/',
         ext: '.html'
       },
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: [{
-          'build/player.min.js': ['player.js']
+          'build/player.min.js': ['src/player.js']
         }]
       },
     },
@@ -35,11 +35,11 @@ module.exports = function(grunt) {
         },
       },
       css: {
-        files: '*.sass',
+        files: 'src/*.sass',
         tasks: 'compass'
       },
       html: {
-        files: '*.haml',
+        files: 'src/*.haml',
         tasks: 'haml'
       }
     }
